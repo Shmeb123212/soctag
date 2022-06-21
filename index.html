@@ -351,7 +351,7 @@
                                 <img src="" alt="" class="table__img">
                                 
                                     <h3 class="table__item-title">Lorem ipsum</h3>
-                                    <p class="table__item-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur est sapiente modi? Cumq orem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur est sapiente modi? Cumque totam animi, sunt iusto</p>
+                                    <p class="table__item-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur est sapiente modi? Cumq orem ipsum dolor sit, amet consectetur </p>
                                     <div class="table__btn-block">
                                         <button class="table__item-btn">Заказать</button>
                                     </div>
@@ -363,11 +363,13 @@
             </div>
         </section>
         <div class="modal">
-            <div class="modal__main">       
+            <div class="modal__main">  
+                <span class="modal__exit"></span>     
                 <form class="telegram" action="/ajax.php" method="POST">       
                     <input type="text" name="user_name" placeholder="Name" autocomplete="off" class="modal__input" />
                     <input type="text" name="user_phone" placeholder="Phone"  autocomplete="off" class="modal__input"/>
                     <input type="text" name="user_email" placeholder="Email" autocomplete="off" class="modal__input"/>
+                    <input type="text" name="user_item" placeholder="" autocomplete="off" class="modal__input-hidden"/>
                     <button type="submit" class="btn__modal">
                         отправить
                     </button>
