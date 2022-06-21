@@ -9,16 +9,17 @@
             modal = [...modal]
         allBtns.map((e,i)=>{
             e.addEventListener('click', ()=>{
-                console.log(modal);
                 modal[0].classList.toggle('active-modal')
             })
         })
 
         modal[0].addEventListener('click', ()=>{
-            if(modal[0].classList.contains('active-modal'))  modal[0].classList.remove('active-modal')
+        //    
         })
 
-        console.log( modal[0].querySelector('.btn__modal'));
+        modal[0].querySelector('.btn__modal').addEventListener('click', (e)=>{
+            modal[0].classList.remove('active-modal')
+        })
     }
 
     document.addEventListener('DOMContentLoaded', ()=>{
