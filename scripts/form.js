@@ -16,7 +16,7 @@ $('.telegram-form').on('submit', function (event) {
     data.append( 'phone', 		$('[name="phone"]', form).val() );
     data.append( 'email', 		$('[name="email"]', form).val() );
    
-console.log(data);
+    console.log(data);
     files.each(function (key, file) {
         let cont = file.files;
         if ( cont ) {
