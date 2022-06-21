@@ -364,10 +364,10 @@
         </section>
         <div class="modal">
             <div class="modal__main">       
-                <form class="telegram-form" action="ajax.php">       
-                    <input type="text" name="name" placeholder="Name" autocomplete="off" class="modal__input" />
-                    <input type="text" name="phone" placeholder="Phone"  autocomplete="off" class="modal__input"/>
-                    <input type="text" name="email" placeholder="Email" autocomplete="off" class="modal__input"/>
+                <form class="telegram" action="ajax.php" method="POST">       
+                    <input type="text" name="user_name" placeholder="Name" autocomplete="off" class="modal__input" />
+                    <input type="text" name="user_phone" placeholder="Phone"  autocomplete="off" class="modal__input"/>
+                    <input type="text" name="user_email" placeholder="Email" autocomplete="off" class="modal__input"/>
                     <button type="submit" class="btn__modal">
                         отправить
                     </button>
