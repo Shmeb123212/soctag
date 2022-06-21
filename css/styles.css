@@ -613,12 +613,13 @@ body::-webkit-scrollbar {
 
 .table__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
     column-gap: 20px;
     row-gap: 35px;
     justify-content: center;
 }
+
 
 .table__item {
     min-height: 550px;
